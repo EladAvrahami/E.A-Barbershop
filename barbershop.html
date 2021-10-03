@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop project</title>
+    <link rel="shortcut icon" href="images/chairIcon.ico" /> 
+    <link rel="stylesheet" href="barbershop.css">
+    <script src="https://kit.fontawesome.com/21c18cf0d2.js" crossorigin="anonymous"></script><!--זה מאתר פונטים מס 6 בקובץ וורד שיעור 32עונה1-->
+    <script src="barbershopjs.js"></script>
+</head>
+<body onload="init()">
+   
+    <div class="upBtn">
+        <a class="fas fa-arrow-circle-up" href="#header"> </a>
+       </div>
+       
+    <header class="container_fluid"  id="header"><!--קראתי לכולם קונטיינר גדי שיתפרסו על 100% מהמסך-->
+        <div class="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="#aboutusbox">קצת עלינו</a> </li>
+                <li><a href="#ourcustomres">הלקוחות שלנו</a></li>
+                <li><a href="#ourprice">המחירים שלנו</a></li>
+                <li><a class="fas fa-phone " href="tel://0504226106"> קביעת תורים</a> </li>
+                <li><a class="fas fa-map-marker-alt " href="https://www.google.co.il/maps/place/%D7%90%D7%99%D7%A1%D7%A8+
+                    %D7%99%D7%94%D7%95%D7%93%D7%94+%D7%90%D7%95%D7%A0%D7%98%D7%A8%D7%9E%D7%9F+6
+                    ,+%D7%AA%D7%9C+%D7%90%D7%91%D7%99%D7%91+%D7%99%D7%A4%D7%95%E2%80%AD/@32.0467374,
+                    34.8070042,17z/data=!4m5!3m4!1s0x151d4b17013b026f:0x8478768347e42541!
+                    8m2!3d32.0467374!4d34.8048155" target="blank"> נווט עכשיו</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div class="strip container_fluid"  id="aboutusbox"><!--נתתי שני שמותלדיב הזה -->
+        <!--שמתי פה תז כדי שכשנלחץ על הכפתור בבר יופיע כל העמוד בצורה יפה יותר-->
+        <div class="container">
+            <div class="aboutusbox"> 
+                    <div class="h2box"><h2>קצת עלינו</h2> </div>
+                    <div class="textbox">
+                            <p>המספרה הכי טובה בתל אביב כבר כאן וזה הזמן שלכם לבוא ולשפר את המראה מבלי לשבור את הכיס  
+                            האני מאמין שלנו זה לעשות מכל הלב עד שהלקוח מרוצה ועד מלא חארטות כאלו 
+                            <br>
+                            בקיצור תבואו יש מלא חניה ומחיר היכרות מיוחד עבור <span>התספורת הראשונה - 30 שח בלבד !!!</span>
+                            </p>
+                    </div>
+            </div>
+            
+        </div> 
+    </div>
+
+
+    <div class="block1 container_fluid" id="ourcustomres">
+        <div class="container">
+            <div class="aboutusbox"> 
+                <div class="h2box"><h2>הלקוחות שלנו</h2> </div>
+                        <div class="gallery">
+                           <div class="divbigpic"> <img class="big_pic" id="big_pic" src="images/haircut1.jpg"></div>
+                            <div class="small_pics">
+                            <img class="big_pic smallpic" id="big_pic1" src="images/haircut1.jpg" onclick="onpic1click()" >
+                            <img class="big_pic smallpic" id="big_pic2" src="images/haircut2.jpg" onclick="onpic2click()">
+                            <img class="big_pic smallpic" id="big_pic3" src="images/haircut3.jpg" onclick="onpic3click()">
+                          <!--  <img class="big_pic smallpic" id="big_pic4" src="images/haircut4.jpg"> -->
+                            </div>
+                            <button type="button" onclick="backpic()" id="back_btn">Back</button>
+                            <button type="button" onclick="nextpic()" id="next_btn">Next</button>
+
+
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="block2 container_fluid" id="ourprice"><!-- *תכלס אפשר לשים פה את תגית אימג ועל זה להוסיף בסיאסאס את ערכי העיצוב כמו מריחת האימג בשורה אחת תחת מזהה קלאס כולל של כל הפלויידים -*משימה לתיקון בהמשך  -->
+          
+            <div class="container">
+                <div class="price_h2box"><h2>המחירים שלנו</h2> </div>
+                <div class="price_textbox">
+                        טבלה
+                </div>
+            </div> 
+       
+    </div>
+
+
+
+
+
+    <footer class="container_fluid">
+        
+          @כל הזכויות שמורות אלעד אברהמי 
+    </footer>
+</body>
+</html>
