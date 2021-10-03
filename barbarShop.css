@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    /*כדי לכלול את הפדינג והבורדר בתוך הגדלים של הדיבים שבאבחר בהמשך*/
+}
+body{
+   /* background: url(images/haircuttemplate\ \(2\).png) no-repeat center;
+    background-size: 100% 100%;*/
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    direction: rtl; 
+}
+.container{
+    width: 100%;
+}
+
+header{
+background-color: rgb(51, 49, 49);
+position: relative;/*יחסית ללוגו*/
+height: 190px;
+
+}
+
+.logo{
+    float: left;
+    /*border-radius: 70px;*/
+    height: 120px;
+    width: 350px;
+    border: solid silver;
+    background-image: url(images/ELADLOGO.PNG);
+    background-size: 100% 100%;
+    position: absolute;/*יחסית לפתיח*/
+    left: 3%;
+    top: 13%;
+    /*צל מסביב ללוגו*/
+    -webkit-box-shadow: -128px 1px 124px 150px rgba(0,0,0,0.75);
+-moz-box-shadow: -128px 1px 124px 150px rgba(0,0,0,0.75);
+box-shadow: -128px 1px 124px 150px rgba(0,0,0,0.75);
+background-color:transparent;/*במידה והיה באמת קובץ פנג היה משנה את הרקע*/
+
+}
+
+ nav{
+    float: right;
+    display: inline-flex;
+    align-items: center;
+    min-height: 170px;
+    padding-right: 25px;
+    border: blueviolet solid;
+}
+nav ul{
+    list-style: none;/*מבטל נקודות ליד*/
+    margin: 0;
+    padding: 0;
+
+}
+nav ul li{
+    display: inline-block;/*גורם לכך שהלינקים יהיו אחד ליד השני ולא מתחת */
+}
+
+nav ul li a{
+    color:whitesmoke;
+    text-decoration: none;
+    padding: 25px ;
+    font-size: 30px;
+
+}
+
+nav ul li a:hover{
+    color:black;
+    font-size: 40px;
+    transition-duration: 0.8s;
+
+}
+
+
+header{
+    width: 90%; 
+    background-color:  rgb(68, 70, 71);
+/* צל בחלק התחתון כלפי מעלה*/
+    -webkit-box-shadow: inset 0px -34px 9px -11px rgba(0,0,0,0.86);
+    -moz-box-shadow: inset 0px -34px 9px -11px rgba(0,0,0,0.86);
+    box-shadow: inset 0px -34px 9px -11px rgba(0,0,0,0.95);
+}
+
+main{
+    background: url(images/haircutstrip.png) no-repeat center;
+    background-size: 100% 100%;
+    height: 700px;
+/*צל מלמעלה ולמטה*/
+-webkit-box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
+-moz-box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
+box-shadow: inset 0px -3px 12px 14px rgba(0,0,0,1);
+
+}
+
+
+
+
+footer{
+    background: url(images/haircutfooterbetter.png) no-repeat center;
+    background-size: 100% 100%;
+    height: 300px;
+    /*צל בחלק העליון כלפי מטה*/
+-webkit-box-shadow: inset 0px 25px 18px 0px rgba(0,0,0,0.95);
+-moz-box-shadow: inset 0px 25px 18px 0px rgba(0,0,0,0.95);
+box-shadow: inset 0px 25px 18px 0px rgba(0,0,0,0.95);
+    
+}
+
